@@ -11,7 +11,6 @@ function setupPlayer(url) {
     var playerInstance = jwplayer("player");
     playerInstance.setup({
         playlist: [{
-            image,
             sources: [{
                 "default": false,
                 "type": "hls",
