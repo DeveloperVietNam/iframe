@@ -42,7 +42,7 @@ function setupPlayer(url) {
 function init() {
     let id = getValue("id")
     if (id) {
-        setupPlayer("https://m3u8.1proxy.xyz/low/" + id + ".m3u8")
+        setupPlayer("https://m3u8.1proxy.xyz/low/" + id + "_playlist.m3u8")
     } else {
         //không có id trong dữ liệu thì về 404
         document.location.href = "https://public.gostream.video/404.html"
