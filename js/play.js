@@ -28,7 +28,7 @@ function setupPlayer(url) {
         setTimeout(() => {
             playerInstance.play()
         }, 2000);
-        playerInstance.addButton("/Settings.svg", "Server", function () {
+        playerInstance.addButton("/settings.svg", "Server", function () {
             
         }, "Server");
     });
