@@ -18,6 +18,7 @@ function setupPlayer(url) {
                 "label": "0"
             }]
         }],
+        autostart: true,
         primary: "html5",
         hlshtml: true,
         width: "100%",
