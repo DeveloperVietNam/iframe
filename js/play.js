@@ -54,7 +54,7 @@ const url = (window.location != window.parent.location)
     ? document.referrer
     : document.location.href;
 
-if (url && url.includes(my_domain)) {
+if (url) {
     //nếu chạy link trực tiếp thì sẽ về 404. đổi
     document.location.href = "https://public.gostream.video/404.html"
 } else {
