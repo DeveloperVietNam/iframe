@@ -25,17 +25,12 @@ function setupPlayer(url) {
     });
 
     playerInstance.on("ready", function () {
-        // if (getValue("autoplay") === "1") {
-        //     setTimeout(() => {
-        //         playerInstance.play()
-        //     }, 2000);
-        // }
-        // playerInstance.addButton("https://public.gostream.video/img/forward.svg", "Forward 15 seconds", function () {
-        //     playerInstance.seek(playerInstance.getPosition() + 15);
-        // }, "Forward 15 seconds");
-        // playerInstance.addButton("https://public.gostream.video/img/backward.svg", "Rewind 15 seconds", function () {
-        //     playerInstance.seek(playerInstance.getPosition() - 15);
-        // }, "Rewind 15 seconds");
+        setTimeout(() => {
+            playerInstance.play()
+        }, 2000);
+        playerInstance.addButton("/Settings.svg", "Server", function () {
+            
+        }, "Server");
     });
 }
 
